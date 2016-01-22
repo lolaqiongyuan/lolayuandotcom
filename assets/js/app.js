@@ -39,7 +39,7 @@
 
 var phonecatApp = angular.module('phonecatApp', []);
 
-phonecatApp.controller('PhoneListCtrl', function ($scope) {
+phonecatApp.controller('PhoneListCtrl', ［'$scope', '$http'］，function ($scope, $http) {
   $scope.phones = [
     {'name': 'Nexus S',
      'snippet': 'Fast just got faster with Nexus S.',
